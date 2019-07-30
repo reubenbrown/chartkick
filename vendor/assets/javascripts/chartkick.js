@@ -1403,6 +1403,7 @@
       var options = merge(merge(defaultOptions$2, chartOptions), chart.options.library || {});
 
       var data = new this$1.library.visualization.DataTable();
+      data.addColumn({type: "string", id: "ID"});
       data.addColumn({type: "string", id: "Name"});
       data.addColumn({type: "date", id: "Start"});
       data.addColumn({type: "date", id: "End"});
